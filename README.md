@@ -1,7 +1,7 @@
 # Cyber Security
 
 ## Information
-* ###### Nareerat Juntana
+* ###### Phuthan Aendu
 * 6702041510148
 * s6702041510148@email.kmutnb.ac.th
 

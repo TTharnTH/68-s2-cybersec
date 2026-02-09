@@ -1,18 +1,7 @@
 services:
-  s2db:
-    image: postgres:latest
-    container_name: 68-s2-database
-    ports:
-      - ${DATABASE_PORT}:5432
-    environment:
-      POSTGRES_USER: ${DATABASE_USER}
-      POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
-      POSTGRES_DB: ${DATABASE_NAME}
   s2app:
     image: prawee/strapi:latest
-    container_name: 68-s2-admin
-    depends_on:
-      - s2db
+    container_name: 68-s2-app
     environment:
       DATABASE_CLIENT: postgres
       DATABASE_HOST: ${DATABASE_HOST}
